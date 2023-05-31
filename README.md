@@ -1,5 +1,5 @@
 # cssBayan
-Аккрдеон написанный на чистом HTML и СSS, без использования JavaScript.
+Аккардеон написанный на чистом HTML и СSS, без использования JavaScript.
 
 https://timb-bers.github.io/cssBayan/
 
