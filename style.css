@@ -1,0 +1,247 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: antiquewhite;
+}
+
+ul,
+ol,
+form,
+input {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+input {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  color: #000;
+}
+
+.bayan-title {
+  color: #0020d3;
+}
+
+.cat-label {
+  cursor: pointer;
+}
+
+.bayan-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bayan-image {
+  display: block;
+  height: 0rem;
+  margin: 0rem auto;
+  border-radius: 1.2rem;
+  transition: height 1s ease, opacity 1s ease;
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked ~ .bayan-inner .bayan-title {
+  color: black;
+}
+
+@media (hover: hover) {
+  .icon-image {
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+
+  .bayan-list:hover > .bayan-item .icon-image {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .bayan-list:hover > .bayan-item .radio:checked ~ .bayan-inner > .icon-image {
+    transform: rotate(45deg);
+  }
+
+  .bayan-list:hover > .bayan-item .bayan-title {
+    color: #000;
+  }
+
+  .cat-label:hover > .bayan-image {
+    height: 16rem;
+  }
+
+  .cat-label:hover > .bayan-inner .icon-image {
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+  .cat-label:active > .bayan-inner .icon-image {
+    transition: filter 1s ease;
+    filter: invert(16%) sepia(100%) saturate(3572%) hue-rotate(233deg)
+      brightness(76%) contrast(129%) opacity(60%);
+  }
+
+  .cat-label:active > .bayan-inner .bayan-title {
+    transition: opacity 1s ease;
+    opacity: 0.6;
+  }
+
+  .cat-label:active > .bayan-image {
+    opacity: 0.6;
+  }
+}
+
+.icon-image {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.bayan-list:hover > .bayan-item .icon-image {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.bayan-list:hover > .bayan-item .radio:checked ~ .bayan-inner > .icon-image {
+  transform: rotate(45deg);
+}
+
+.cat-label:hover > .bayan-inner .icon-image {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.cat-label:active > .bayan-inner .bayan-title {
+  color: #0020d3;
+}
+
+@media (min-width: 320px) and (max-width: 819px) {
+  .wrapper {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .bayan-inner {
+    padding-bottom: 0.8rem;
+  }
+
+  .bayan-title {
+    font-size: 1rem;
+  }
+
+  .icon-image {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .bayan-item {
+    padding: 0.5rem 0 0.5rem;
+  }
+
+  hr {
+    margin: 0.3rem 0;
+  }
+
+  .radio:checked ~ .bayan-image {
+    height: 8rem;
+  }
+}
+
+@media (min-width: 820px) {
+  .wrapper {
+    padding: 3.5rem 0;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .bayan-inner {
+    padding-bottom: 1rem;
+  }
+
+  .bayan-title {
+    font-size: 1.2rem;
+  }
+
+  .icon-image {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .bayan-item {
+    padding: 1rem 0 1rem;
+  }
+
+  hr {
+    margin: 0.5rem 0;
+  }
+
+  .radio:checked ~ .bayan-image {
+    height: 16rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper {
+    padding: 5rem 0;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .bayan-inner {
+    padding-bottom: 1.2rem;
+  }
+
+  .bayan-title {
+    font-size: 1.5rem;
+  }
+
+  .icon-image {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .bayan-item {
+    padding: 1.2rem 0 1.2rem;
+  }
+
+  .radio:checked ~ .bayan-image {
+    height: 16rem;
+  }
+}
